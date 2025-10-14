@@ -8,5 +8,7 @@ public class NumberTrianglePattern {
         
         // TODO: Step 2 - Generate the number triangle pattern
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("");
     }
 }
