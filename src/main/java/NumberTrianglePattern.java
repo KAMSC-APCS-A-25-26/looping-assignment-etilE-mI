@@ -12,6 +12,21 @@ public class NumberTrianglePattern {
         System.out.print("Enter a positive integer: ");
         int number = sc.nextInt();
 
+        if (number <= 0)
+        {
+            System.out.println("Error: Please enter a positive integer.");
+        }
+        else
+        {
+            for (int i = 1; i <= number; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    System.out.print(j + " ");
+                }
+                System.out.println();
+            }
+        }
 
         
     }
