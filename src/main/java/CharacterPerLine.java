@@ -8,9 +8,9 @@ public class CharacterPerLine {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a word: ");
-        String word = sc.next();
+        String word = sc.nextLine();
 
-        for(int i=0; i<word.length(); i++)
+        for (int i=0; i < word.length(); i++)
         {
             System.out.println(word.charAt(i));
         }
