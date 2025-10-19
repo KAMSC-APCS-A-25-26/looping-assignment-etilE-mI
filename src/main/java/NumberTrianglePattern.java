@@ -10,24 +10,24 @@ public class NumberTrianglePattern {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a positive integer: ");
-        int number = sc.nextInt();
+        int num = sc.nextInt();
 
-        if (number <= 0)
-        {
-            System.out.println("Error: Please enter a positive integer.");
+        if (num < 0) {
+            sc.close();
+            return;
         }
-        else
-        {
-            for (int i = 1; i <= number; i++)
-            {
-                for (int j = 1; j <= i; j++)
-                {
-                    System.out.print(j + " ");
+
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+                if (j != i) {
+                    System.out.print(" ");
                 }
-                System.out.println();
             }
+            System.out.println();
         }
 
-        
+
+
     }
 }
